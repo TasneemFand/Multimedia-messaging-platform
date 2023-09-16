@@ -9,7 +9,7 @@ A voice, video, and text chat app where you can belong to groups and channels sp
 - Manage members as admin and moderators
 - send attachements
 - Delete & Edit messages in real time
-- resposive UI and mobile UI using TailwindCSS
+- resposive UI and mobile UI using TailwindCSS and UI components from shadcn/ui
 - light/dark mode
 - optimized app performance and data loading using React Query
 
