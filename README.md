@@ -11,7 +11,7 @@ A voice, video, and text chat app where you can belong to groups and channels sp
 - Delete & Edit messages in real time
 - authenticated app using clerk
 - resposive UI and mobile UI using TailwindCSS and UI components from shadcn/ui
-- light/dark mode
+- light/dark mode using next-themes
 - optimized app performance and data loading using React Query
 
 
@@ -23,4 +23,5 @@ A voice, video, and text chat app where you can belong to groups and channels sp
 - TailwindCSS
 - shadcn/ui for customizable ui components
 - React Query
+- next themes for darkmode or any theme
 
