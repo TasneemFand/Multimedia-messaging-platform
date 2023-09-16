@@ -19,7 +19,7 @@ A voice, video, and text chat app where you can belong to groups and channels sp
 - Next js
 - React js
 - Socket.io
-- clerk for authentication in Next,react app
+- [Clerk](https://clerk.com) for authentication in Next,react app
 - TailwindCSS
 - shadcn/ui for customizable ui components
 - React Query
