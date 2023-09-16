@@ -19,5 +19,6 @@ A voice, video, and text chat app where you can belong to groups and channels sp
 - React js
 - Socket.io
 - TailwindCSS
+- shadcn/ui for customizable ui components
 - React Query
 
