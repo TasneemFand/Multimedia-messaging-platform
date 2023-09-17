@@ -24,4 +24,5 @@ A voice, video, and text chat app where you can belong to groups and channels sp
 - shadcn/ui for customizable ui components
 - React Query
 - next themes for darkmode or any theme
-
+- [Prisma](https://www.prisma.io/) server-side library to read and write to database
+- SQLite lightweight database that does not require any kind of server to run.
