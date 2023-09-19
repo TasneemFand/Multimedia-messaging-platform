@@ -21,8 +21,11 @@ A voice, video, and text chat app where you can belong to groups and channels sp
 - Socket.io
 - [Clerk](https://clerk.com) for authentication in Next,react app (customizable components with the auth strategies you need — passwords, email codes or links, OAuth and more)
 - TailwindCSS
-- shadcn/ui for customizable ui components
+- shadcn/ui for customizable ui components and its features in forms using react hook form and zod for client-side validation forms and creating form schema.
 - React Query
 - next themes for darkmode or any theme
 - [Prisma](https://www.prisma.io/) server-side library to read and write to database
 - SQLite lightweight database that does not require any kind of server to run.
+- [uploadThing](https://uploadthing.com) for upload files in next.js apps with files hosting and authenticating and signing uploads in our backend server.
+
+
