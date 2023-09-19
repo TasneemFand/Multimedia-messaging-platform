@@ -1,5 +1,6 @@
 "use client";
 
+import axios from "axios";
 import * as z from 'zod';
 import { useForm } from "react-hook-form";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "../ui/dialog";
@@ -17,6 +18,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from 'react';
 import { FileUpload } from '../file-upload';
+import { useRouter } from "next/navigation";
   
 const formSchema = z.object({
 	name: z.string().min(1, {
@@ -28,7 +30,9 @@ const formSchema = z.object({
 
 })
 export const InitialModal = () => {
-	const [isMounted, setIsMounted] = useState(false);  
+	const [isMounted, setIsMounted] = useState(false);
+	const router = useRouter();
+
 	useEffect(() => {
 	  setIsMounted(true);
 	}, []);
@@ -44,7 +48,14 @@ export const InitialModal = () => {
 	const isloading = form.formState.isSubmitting;
 
 	const onSubmit = async (values: z.infer<typeof formSchema>) => {
-
+		try {
+			await axios.post("/api/servers", values);
+			form.reset();
+			router.refresh();
+			window.location.reload();
+		} catch(error) {
+			console.log(error);
+		}
 	}
 
 	if (!isMounted) {
