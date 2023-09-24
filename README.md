@@ -27,5 +27,6 @@ A voice, video, and text chat app where you can belong to groups and channels sp
 - [Prisma](https://www.prisma.io/) server-side library to read and write to database
 - SQLite lightweight database that does not require any kind of server to run.
 - [uploadThing](https://uploadthing.com) for upload files in next.js apps with files hosting and authenticating and signing uploads in our backend server.
-
-
+- zustand small state management library (Your store is a hook!)
+- Lucide React icon library for react applications.
+- query-string to Parse and stringify URL query strings
