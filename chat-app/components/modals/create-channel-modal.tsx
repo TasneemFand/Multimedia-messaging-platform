@@ -32,12 +32,8 @@ import {
   SelectTrigger,
   SelectValue
 } from "@/components/ui/select";
+import { ChannelType } from "@/constant";
 
-enum ChannelType {
-	TEXT = "TEXT",
-	AUDIO = "AUDIO",
-	VIDEO = "VIDEO",
-}
 
 const formSchema = z.object({
   name: z.string().min(1, {
