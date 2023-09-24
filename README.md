@@ -5,8 +5,10 @@ A voice, video, and text chat app where you can belong to groups and channels sp
 
 - Real-time messaging using Socket.io
 - conversation between members by text/video calls
-- Create Text, Audio and Video call Channels
-- Manage members as admin and moderators
+- Create servers by user and manage the servers by the admin/moderators
+- Create Text, Audio and Video call Channels in servers
+- Manage channels by admin/moderators
+- Manage members as admin, moderators and guests
 - send attachements
 - Delete & Edit messages in real time
 - authenticated app using clerk
