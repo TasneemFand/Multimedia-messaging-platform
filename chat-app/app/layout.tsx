@@ -8,6 +8,7 @@ import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
 import { ourFileRouter } from './api/uploadthing/core';
 import { ModalProvider } from '@/components/providers/modal-provider'
+import { SocketProvider } from '@/components/providers/socket-provider'
 
 const font = Open_Sans({ subsets: ['latin'] })
 
@@ -34,11 +35,13 @@ export default function RootLayout({
 						enableSystem={false}
 						storageKey='chat-app-theme'
 					>
-						<NextSSRPlugin
-							routerConfig={extractRouterConfig(ourFileRouter)}
-						/>
-						<ModalProvider/>
-						{children}
+						<SocketProvider>
+							<NextSSRPlugin
+								routerConfig={extractRouterConfig(ourFileRouter)}
+							/>
+							<ModalProvider/>
+							{children}
+						</SocketProvider>
 					</ThemeProvider>
 				</body>
 		</html>
