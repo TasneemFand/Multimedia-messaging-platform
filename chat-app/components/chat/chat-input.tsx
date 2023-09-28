@@ -13,9 +13,10 @@ import {
 } from "@/components/ui/form";
 
 import { Input } from "@/components/ui/input";
-import { Plus, Smile } from "lucide-react";
+import { Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useModal } from "@/hooks/use-modal-store";
+import { EmojiPicker } from "../emoji-picker";
 
 interface ChatInputProps {
 	apiUrl: string;
@@ -86,9 +87,9 @@ export const ChatInput = ({
 										{...field}
 									/>
 									<div className="absolute top-7 right-8">
-										<Smile
-          									className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition"
-        								/>
+										<EmojiPicker
+											onChange={(emoji: string) => field.onChange(`${field.value} ${emoji}`)}
+										/>
 									</div>
 								</div>
 							</FormControl>
