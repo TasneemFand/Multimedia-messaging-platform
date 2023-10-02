@@ -32,3 +32,4 @@ A voice, video, and text chat app where you can belong to groups and channels sp
 - zustand small state management library (Your store is a hook!)
 - Lucide React icon library for react applications.
 - query-string to Parse and stringify URL query strings
+- [LiveKit](https://livekit.io/) for real-time audio and video
